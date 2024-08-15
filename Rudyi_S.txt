@@ -1,0 +1,7 @@
+def calculate_time(t1, t2, t3):
+    total_speed = 1/t1 + 1/t2 + 1/t3
+    time_needed = 1 / total_speed
+    return round(time_needed, 2)
+
+t1, t2, t3 = map(int, input().split())
+print(calculate_time(t1, t2, t3))
